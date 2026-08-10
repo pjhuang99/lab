@@ -120,7 +120,11 @@ export default function CasePage({ params }: CasePageProps) {
         </header>
 
         <div className="mx-auto mt-12 max-w-content">
-          <MDXRemote source={content} components={mdxComponents} />
+          <MDXRemote
+            source={content}
+            components={mdxComponents}
+            options={{ blockJS: false }}
+          />
         </div>
       </div>
     </article>
