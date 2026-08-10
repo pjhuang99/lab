@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">AI writing demo cover placeholder</title>
+  <rect width="1200" height="750" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#B7FF3C"/>
+  <rect x="80" y="90" width="360" height="38" fill="#181818"/>
+  <rect x="80" y="150" width="620" height="12" fill="#181818" opacity="0.18"/>
+  <rect x="80" y="178" width="520" height="12" fill="#181818" opacity="0.18"/>
+  <rect x="80" y="206" width="560" height="12" fill="#181818" opacity="0.18"/>
+  <rect x="80" y="250" width="260" height="8" fill="#181818" opacity="0.1"/>
+  <rect x="80" y="280" width="620" height="12" fill="#181818" opacity="0.14"/>
+  <rect x="80" y="308" width="540" height="12" fill="#181818" opacity="0.14"/>
+  <rect x="80" y="336" width="600" height="12" fill="#181818" opacity="0.14"/>
+  <rect x="80" y="380" width="300" height="8" fill="#181818" opacity="0.1"/>
+  <rect x="80" y="410" width="640" height="12" fill="#181818" opacity="0.11"/>
+  <rect x="80" y="438" width="500" height="12" fill="#181818" opacity="0.11"/>
+  <rect x="80" y="466" width="580" height="12" fill="#181818" opacity="0.11"/>
+  <rect x="920" y="560" width="200" height="60" fill="#B7FF3C"/>
+  <text x="930" y="598" font-family="monospace" font-size="26" font-weight="700" fill="#181818">DEMO COVER</text>
+  <rect x="80" y="620" width="180" height="5" fill="#181818" opacity="0.35"/>
+</svg>

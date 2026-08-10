@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ctc-scene: ppt;
+  --ctc-intent: elegant;
+  --ctc-anchor: #f2f3f4;
+  --ctc-bg: #f2f3f4;
+  --ctc-title: #685e48;
+  --ctc-body: #695e45;
+  --ctc-button: #ad9e5f;
+  --ctc-accent: #cdd1d3;
+
+  --paper: #f4f1ea;
+  --ink: #181818;
+  --muted: #777777;
+  --acid: #b7ff3c;
+  --line: rgba(24, 24, 24, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    var(--font-inter),
+    var(--font-noto),
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+  font-feature-settings: "tnum" 1, "cv11" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(24, 24, 24, 0.25);
+  border: 2px solid var(--paper);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code:not(pre code) {
+  border-radius: 2px;
+  background: rgba(24, 24, 24, 0.06);
+  padding: 0.15em 0.35em;
+  font-family:
+    var(--font-jetbrains),
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  font-size: 0.85em;
+  color: var(--ink);
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

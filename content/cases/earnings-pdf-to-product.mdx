@@ -1,0 +1,247 @@
+---
+title: "从“找财报PDF”到“做财报分析工具”"
+slug: "earnings-pdf-to-product"
+category: "采编工具"
+summary: "一个关于财报PDF的问题，最后变成了一个产品想法。"
+result: "这个想法最终变成了“财报雷达”，一个可以打开的财报分析工具。"
+date: "2026-08-08"
+order: 2
+tags: ["财报", "采编工具", "产品设计", "AI"]
+cover: "/images/covers/earnings-radar.svg"
+featured: true
+demo: false
+tool_url: "https://cb.bbird.xyz/"
+---
+
+> CASE 02 · AI × 财报 × 产品设计
+>
+> 一个关于财报PDF的问题，最后变成了一个产品想法。
+
+## Objective
+
+我为什么做这个东西？
+
+一开始我只是想找“最新的上市公司财报PDF”，后来发现真正的问题不是文件在哪，
+而是拿到文件之后，怎么快速知道这家公司发生了什么。
+
+> “有哪些网站提供最新的上市公司财报PDF？”
+
+## 从一个问题开始
+
+这个案例没有从“做一个产品”开始，而是从一个普通的工作问题开始。
+问题变成产品，中间只隔了几次追问。
+
+<Timeline label="财报雷达 · 真实案例">
+  <TimelineItem
+    step="01"
+    title="一个普通问题"
+    time="Day 1"
+    summary="我本来只想要一份财报PDF清单。"
+  >
+    <Field label="我的输入">
+      有哪些网站提供最新的上市公司财报PDF？
+    </Field>
+    <Field label="AI 回应">
+      AI 列出了交易所网站、公司投资者关系页面和财报聚合站。
+    </Field>
+    <Field label="我的判断">
+      答案是对的，但它只是一份链接清单，还不是情报。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="02"
+    title="AI 开始搜索"
+    time="Day 1"
+    summary="我让 AI 整理成表格，问题开始变得具体。"
+  >
+    <Field label="我的输入">
+      整理成表格，按行业分一下，标注哪些更新最快。
+    </Field>
+    <Field label="AI 回应">
+      AI 把来源整理成了结构化表格。
+    </Field>
+    <Field label="我的判断">
+      当我把“找链接”变成“找判断依据”，AI 的输出就变了。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="03"
+    title="一个产品想法"
+    time="Day 1"
+    summary="问题从“找文件”变成了“做工具”。"
+  >
+    <Field label="我的输入">
+      如果我能输入公司名，就自动拿到摘要和关键数据呢？
+    </Field>
+    <Field label="AI 回应">
+      AI 说这是一个可以做成产品的想法，并开始拆解功能。
+    </Field>
+    <Field label="我的判断">
+      我没有计划做产品，但这个追问让需求自己冒了出来。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="04"
+    title="AI 开始设计产品"
+    time="Day 2"
+    summary="AI 在缺少约束时会自己膨胀功能。"
+  >
+    <Field label="我的输入">
+      先别写代码，先设计信息架构：这个工具最核心的页面是什么？
+    </Field>
+    <Field label="AI 回应">
+      AI 给出了财报列表、公司摘要、风险提示、下载入口四部分。
+    </Field>
+    <Field label="我的判断">
+      结构不错，但“下载入口”不是重点，重点是读完之后的判断。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="05"
+    title="我继续追问"
+    time="Day 2"
+    summary="追问用户，比追问功能更重要。"
+  >
+    <Field label="我的输入">
+      这个工具到底解决谁的问题？是投资者、记者，还是我自己？
+    </Field>
+    <Field label="AI 回应">
+      AI 把目标用户收敛到采编和财经记者。
+    </Field>
+    <Field label="我的判断">
+      用户不同，产品完全不同。这里决定它不是一个炒股工具。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="06"
+    title="AI 进入财经记者模式"
+    time="Day 2"
+    summary="角色切换让 AI 的输出质量完全不同。"
+  >
+    <Field label="我的输入">
+      你现在是财经记者。看到这份财报，你会先追问哪五个问题？
+    </Field>
+    <Field label="AI 回应">
+      AI 给出了增长质量、现金流向、一次性收益、口径变化、风险提示五个问题。
+    </Field>
+    <Field label="我的判断">
+      同样是 AI，从“信息整理”切到“记者提问”，输出立刻不一样。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="07"
+    title="形成财报情报框架"
+    time="Day 3"
+    summary="一次找 PDF 的提问，变成了一个产品框架。"
+  >
+    <Field label="最终框架">
+      摘要 → 支持事实 → 风险提示 → 待核实清单 → 数据来源。
+    </Field>
+    <Field label="最终结果">
+      这个框架后来变成了“财报雷达”的产品结构。
+    </Field>
+  </TimelineItem>
+</Timeline>
+
+<Conversation
+  title="关键对话"
+  label="DeepSeek · 真实记录"
+  fullLabel="查看完整DeepSeek对话"
+  fullUrl="https://chat.deepseek.com/share/hgve11i29kh9feqpr7"
+  messages={[
+    {
+      role: "me",
+      text: "有哪些网站提供最新的上市公司财报PDF？"
+    },
+    {
+      role: "ai",
+      text: "常见渠道包括交易所网站、公司官网投资者关系页面、财报聚合站。我可以帮你整理成表格，并按更新频率排序。"
+    },
+    {
+      role: "me",
+      text: "如果我能输入公司名，就自动拿到摘要和关键数据呢？"
+    },
+    {
+      role: "ai",
+      text: "这是一个可以做成产品的想法。它至少需要四部分：数据来源、财报摘要、风险提示、下载入口。"
+    },
+    {
+      role: "me",
+      text: "先别写功能清单。你先告诉我，这个工具到底是给谁用的？"
+    },
+    {
+      role: "ai",
+      text: "给采编和财经记者：从“找文件”变成“读重点”，再到“写稿前的情报”。"
+    },
+    {
+      role: "me",
+      text: "现在切换成财经记者。你看到这份财报，会先追问哪五个问题？"
+    },
+    {
+      role: "ai",
+      text: "我会先问：增长是否来自一次性收益？现金流是否支持利润？口径有没有变化？行业趋势如何？最大风险是什么？"
+    }
+  ]}
+/>
+
+<PromptCard
+  title="我是怎么告诉AI的？"
+  context="这个 prompt 是案例的转折点：从“让 AI 整理信息”切换到“让 AI 像记者一样提问”。"
+  prompt={`你现在是一名资深财经记者，正在研究一家上市公司的财报。
+
+请列出你拿到财报后会先追问的五个问题，并解释每个问题背后的判断。
+
+不要复述财报内容，只做记者式的追问。`}
+/>
+
+<Moments
+  title="AI Moments"
+  label="转折点"
+  items={[
+    {
+      title: "问题 → 产品",
+      note: "从一个找 PDF 的提问，变成工具想法。"
+    },
+    {
+      title: "模糊想法 → 产品架构",
+      note: "AI 把一句话拆成可执行的信息架构。"
+    },
+    {
+      title: "财务分析 → 商业情报",
+      note: "从数字复述变成采编可以直接使用的判断。"
+    }
+  ]}
+/>
+
+## My Takeaway
+
+> AI负责扩展，我负责判断。
+
+## Next
+
+<Result
+  title="财报雷达"
+  description="这个想法最后变成了“财报雷达”。从找财报PDF开始，到可以打开的分析工具。"
+  image="/images/artifacts/earnings-radar.svg"
+  imageAlt="财报雷达工具占位图"
+  caption="占位图：未来替换为真实工具截图"
+  url="https://cb.bbird.xyz/"
+  urlLabel="打开财报雷达 ↗"
+  status="live"
+/>
+
+<Lessons
+  items={[
+    "AI 负责扩展，我负责判断。",
+    "一个普通问题也可能变成产品，关键是追问它到底解决谁的问题。",
+    "角色切换（财经记者）比堆功能清单更容易得到高质量输出。",
+    "从找文件到做工具，中间只差一个“如果我能……”。",
+    "先形成情报框架，再决定要不要写代码。"
+  ]}
+/>

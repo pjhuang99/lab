@@ -1,0 +1,166 @@
+---
+title: "时评雷达：从热点线索到有源可查的评论稿"
+slug: "commentary-radar"
+category: "采编工具"
+summary: "把热点线索、事实素材、评论角度和溯源核查放进同一个写稿工作台。"
+result: "已上线可打开的工具。核心差异是稿件中的事实必须来自明确新闻源，并支持溯源核查。"
+date: "2026-08-10"
+order: 4
+tags: ["采编工具", "时评", "AI写作", "事实核查"]
+cover: "/images/covers/commentary-radar.svg"
+featured: true
+demo: false
+tool_url: "https://www.bbird.xyz/"
+---
+
+> CASE 04 · 采编工具 × 事实核查
+>
+> 一个不把“AI 写稿”当成终点，而是把“事实来源”当成前提的评论工作台。
+
+## Objective
+
+我为什么做这个东西？
+
+写时评最怕的不是没角度，而是角度建立在不可靠的事实上。一般 AI 写稿工具会直接生成文章，
+但它不会告诉你“这句话到底来自哪里”。
+
+时评雷达想解决的是：让写稿流程从一开始就绑定事实来源，并在最后多一道溯源核查。
+
+## 产品结构
+
+时评雷达分成左右两个区域：
+
+### 左栏：信息流，提供线索
+
+- 公开接口爬取的热门新闻：头条、新浪新闻、澎湃、36kr 等
+- 虎嗅和 36kr 的 RSS
+- 界面等媒体的财经类报道链接
+
+### 右栏：写稿区域
+
+1. 提供新闻链接
+2. 提取事实，选择角度、立场
+3. LLM 写稿
+4. 核实事实和数据
+
+## 和一般 AI 写稿工具的区别
+
+这个产品两次强调事实来源：
+
+- 写稿之前：必须有用户选定的明确新闻链接作为事实素材；选定写作立场后，由 DeepSeek 写稿。
+- 写稿之后：稿件中明确指出事实的来源，例如“链接 1”“链接 2”。
+
+<Timeline label="时评雷达 · 真实产品">
+  <TimelineItem
+    step="01"
+    title="提出需求"
+    time="Day 1"
+    summary="每天写时评，需要热点线索、事实素材、写作立场和来源可查。"
+  >
+    <Field label="我的判断">
+      只让 AI 写稿不够，还要让 AI 写出的每一句都有“来处”。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="02"
+    title="信息流"
+    time="Day 1"
+    summary="左栏聚合公开热点、RSS 和财经报道链接。"
+  >
+    <Field label="产品行为">
+      头条、新浪、澎湃、36kr 热门新闻，虎嗅和 36kr 的 RSS，以及财经类报道链接统一进入信息流。
+    </Field>
+    <ImageBlock
+      src="/images/artifacts/commentary-radar.svg"
+      alt="时评雷达界面占位图"
+      caption="占位图：左栏信息流 + 右栏写稿区"
+    />
+  </TimelineItem>
+
+  <TimelineItem
+    step="03"
+    title="写稿区"
+    time="Day 2"
+    summary="右栏四步：新闻链接、提取事实、选择角度、LLM 写稿、核实。"
+  >
+    <Field label="产品行为">
+      1 提供新闻链接；2 提取事实，选择角度、立场；3 LLM 写稿；4 核实事实和数据。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="04"
+    title="事实来源前置"
+    time="Day 2"
+    summary="写作前必须有用户选定的新闻链接，DeepSeek 基于它写稿。"
+  >
+    <Field label="我的判断">
+      先有事实素材，再有写作立场，最后才是 AI 写稿。顺序不能反。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="05"
+    title="文中溯源"
+    time="Day 3"
+    summary="稿件明确标注事实来源，例如链接 1、链接 2。"
+  >
+    <Field label="产品行为">
+      每个关键事实都能回到它对应的新闻链接，读者和编辑都可以追查。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="06"
+    title="溯源核查"
+    time="Day 3"
+    summary="草稿窗口底部的“溯源核查”按钮。"
+  >
+    <Field label="产品行为">
+      点击后检查文中的事实是否有出处、表达是否夸张，并给出修改意见。
+    </Field>
+    <Field label="我的判断">
+      这是产品区别于“AI 写稿器”的关键：把核查做进流程，而不是交给自觉。
+    </Field>
+  </TimelineItem>
+</Timeline>
+
+<ImageBlock
+  src="/images/artifacts/commentary-trace-check.png"
+  alt="溯源核查功能页面截图"
+  caption="溯源核查：检查事实出处与表达是否夸张"
+/>
+
+<PromptCard
+  title="我把什么写进了产品规则？"
+  context="时评雷达的核心不是某一次 prompt，而是把“来源前置”写进产品流程。"
+  prompt={`写稿前必须满足：
+
+1. 用户提供明确新闻链接，作为事实素材。
+2. 用户选择角度和立场。
+3. DeepSeek 基于以上材料写稿。
+4. 稿件中的关键事实标注来源链接。
+5. 草稿提供“溯源核查”：检查事实是否有出处、表达是否夸张。`}
+/>
+
+<Result
+  title="时评雷达"
+  description="从热点线索到有源可查的评论稿，工具已经可以打开使用。"
+  image="/images/artifacts/commentary-radar.svg"
+  imageAlt="时评雷达界面占位图"
+  caption="占位图：未来替换为真实截图"
+  url="https://www.bbird.xyz/"
+  urlLabel="打开时评雷达 ↗"
+  status="live"
+/>
+
+<Lessons
+  items={[
+    "AI 写稿不是终点，事实来源才是。",
+    "把“来源前置”写进产品流程，比在 prompt 里反复强调更可靠。",
+    "写稿顺序不能反：先事实，再立场，最后才是生成。",
+    "“溯源核查”不是功能，是一种工作标准。",
+    "工具越接近真实采编流程，越容易被真正用起来。"
+  ]}
+/>

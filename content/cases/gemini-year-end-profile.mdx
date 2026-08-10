@@ -1,0 +1,208 @@
+---
+title: "用 Gemini 对话写完一篇年终人物回顾"
+slug: "gemini-year-end-profile"
+category: "AI写作"
+summary: "2025 年底，我用 Gemini 对话为媒体写了一篇年终人物回顾。"
+result: "文章正式发表。真正有价值的，是一套让 LLM 去除幻觉的工作流程。"
+date: "2025-12-30"
+order: 1
+tags: ["AI写作", "Gemini", "事实核对", "年终人物"]
+cover: "/images/covers/gemini-year-end.svg"
+featured: true
+demo: false
+article_url: "https://m.jiemian.com/article/13828003.html"
+---
+
+> CASE 01 · AI写作 × 事实核对
+>
+> 2025 年底，我用 Gemini 对话写了一篇年终人物回顾。
+>
+> 这个案例的核心不是“AI 写得快”，而是“怎么在对话里核对事实”。
+
+## Objective
+
+用大模型写稿有什么问题？
+
+年终人物回顾是一篇要公开署名的文章，事实错误会直接影响媒体信誉。
+我想验证：用多次对话而不是一次性 Prompt 来写作，能不能在过程中把幻觉逐条拦住。
+
+## 事实核对，而不是写作速度
+
+这篇文章的产出过程并不是“给一段资料，AI 直接成稿”。
+真正的流程是：AI 写草稿，人发现问题，回到相关资料核对，再把规则写到工作流里。
+
+<Timeline label="Gemini 年终人物 · 真实案例">
+  <TimelineItem
+    step="01"
+    title="选题与材料"
+    time="2025 年底"
+    summary="与 Gemini讨论写作角度和思路。"
+  >
+    <Field label="我的输入">
+      我准备写一篇文章，概括2025年的财经风光人物和2024年、2023年的变化，主要从行业沉浮，以及社会心态的迭代来思考。你是一位资深媒体编辑，请给出一些建议和写作思路。
+    </Field>
+    <Field label="AI 回应">
+      Gemini 很快给出了3个思路，两个模版，比如感性版 《三年风光背后：我们如何从“崇拜英雄”走向“寻找定力”》
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="02"
+    title="第一版草稿"
+    time="Day 1"
+    summary="AI 写出了流畅草稿，但我觉得还需补充一些角度：请补充一段，讲讲人物名单变化与社会心理变迁的关系。大概脉络是个人价值 vs 集体主义，年轻人崛起，老登爹味的衰落。"
+  >
+    <Field label="AI 回应">
+Gemini补充：从“爹味”权威到“自洽”一代：社会心理的权力交棒、全球化视野：从“深海远征”到“生而全球”……
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="03"
+    title="发现需要核对的数据和事实"
+    time="Day 1"
+    summary="时间、职位、数字开始出现偏差。"
+  >
+    <Field label="发生了什么">
+      DeepSeek以万亿估值跻身全球独角兽前列，梁文锋以1846亿元的身家跃入财富榜前十。请核实一下数据和来源。
+    </Field>
+    <Field label="我的判断">
+      单个错误可以修正，但如果不建立规则，每个段落都可能再犯。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="04"
+    title="建立事实清单"
+    time="Day 2"
+    summary="把每个可核实断言拆成清单。"
+  >
+    <Field label="我的输入">
+      请把文章里所有具体时间、职位、数字、引语列成清单，并标注是否来自我提供的资料。
+    </Field>
+    <Field label="AI 回应">
+      Gemini 输出了事实清单，并在无法确认的条目旁标了“待核实”。
+    </Field>
+  </TimelineItem>
+
+
+  <TimelineItem
+    step="05"
+    title="明确边界"
+    time="Day 2"
+    summary="未提供的信息标为待核实，禁止补全。"
+  >
+    <Field label="我的输入">
+      以后凡是我没提供的具体时间、数字、职位，必须标“待核实”，不要自己补。
+    </Field>
+    <Field label="AI 回应">
+      Gemini 接受了这条规则，后续版本不再自行补全细节。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="06"
+    title="发表"
+    time="2025 年底"
+    summary="文章通过编辑流程正式发布。"
+  >
+    <Field label="最终结果">
+      文章上线。事实由人逐条核对，AI 负责组织和表达。
+    </Field>
+  </TimelineItem>
+</Timeline>
+
+<Conversation
+  title="关键对话"
+  label="Gemini · 真实记录"
+  initialCount={4}
+  fullLabel="查看完整Gemini对话"
+  fullUrl="https://share.gemini.google/2S8vLpLvTOgq"
+  messages={[
+    {
+      role: "me",
+      text: "这是一份人物资料，包含采访记录和公开报道。请帮我写一篇年终人物回顾。"
+    },
+    {
+      role: "ai",
+      text: "我建议从早年经历、关键转折、最新动态三个部分展开，结尾落在年度意义。"
+    },
+    {
+      role: "me",
+      text: "你写的是 2023 年加入，但原始资料写的是 2022 年。请重新核对。"
+    },
+    {
+      role: "ai",
+      text: "你说得对，原始资料是 2022 年。我已修正时间线，并重新检查了其他日期。"
+    },
+    {
+      role: "me",
+      text: "以后凡是我没提供的具体时间、数字、职位，必须标“待核实”，不要自己补。"
+    },
+    {
+      role: "ai",
+      text: "明白。我会把可核实事实和推断分开，未提供的细节一律标记为待核实。"
+    }
+  ]}
+/>
+
+<PromptCard
+  title="我是怎么告诉AI的？"
+  context="这个 prompt 从“帮我写文章”变成“先建事实规则，再写文章”。"
+  prompt={`请把人物资料整理成可发表的年终人物回顾。
+
+规则：
+1. 所有具体时间、职位、数字、引语必须来自我提供的资料。
+2. 未提供的信息写成“待核实”，不要自行补全。
+3. 先输出事实清单，再写正文。
+4. 推断性表述必须明确标注为“推断”。
+
+如果资料缺失，直接说缺失，不要猜。`}
+/>
+
+<Moments
+  title="AI Moments"
+  label="转折点"
+  items={[
+    {
+      title: "流畅草稿 → 幻觉风险",
+      note: "AI 写得越顺，越需要逐条核对。"
+    },
+    {
+      title: "修改单个错误 → 建立规则",
+      note: "从纠正一处时间，到约定“未提供=待核实”。"
+    },
+    {
+      title: "写作任务 → 事实流程",
+      note: "最有价值的产出不是文章，是核对清单。"
+    }
+  ]}
+/>
+
+## 事实核对清单
+
+这篇文章最终按照下面五类逐条核对：
+
+- 时间：加入时间、事件年份、项目时间
+- 身份：当前职务、历史职务
+- 数字：年龄、金额、数据
+- 引语：是否来自资料原文
+- 推断：明确标注为推断
+
+<Result
+  title="发表文章"
+  description="2025 年底完成的年终人物回顾，已正式发表。"
+  url="https://m.jiemian.com/article/13828003.html"
+  urlLabel="阅读发表文章 ↗"
+  status="live"
+/>
+
+<Lessons
+  items={[
+    "AI 写稿越快，事实核对越不能省。",
+    "让 AI 把每个可核实断言拆成清单，幻觉就会变得可见。",
+    "未提供的信息一律标“待核实”，不让 AI 补全。",
+    "对话式核对比一次性 Prompt 更可靠：错误出现后可以当场修正规则。",
+    "真正发表的署名来自人的把关，而不是 AI 的流畅。"
+  ]}
+/>

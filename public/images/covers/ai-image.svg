@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">AI image demo cover placeholder</title>
+  <rect width="1200" height="750" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#B7FF3C"/>
+  <rect x="90" y="90" width="300" height="10" fill="#181818" opacity="0.6"/>
+  <rect x="90" y="130" width="440" height="34" fill="#181818"/>
+  <text x="106" y="154" font-family="monospace" font-size="18" font-weight="700" fill="#F4F1EA">INFOGRAPH DRAFT</text>
+  <g>
+    <rect x="120" y="260" width="90" height="260" fill="#181818"/>
+    <rect x="250" y="180" width="90" height="340" fill="#B7FF3C"/>
+    <rect x="380" y="310" width="90" height="210" fill="#181818"/>
+    <rect x="510" y="240" width="90" height="280" fill="#181818" opacity="0.45"/>
+  </g>
+  <g stroke="#181818" stroke-opacity="0.18" stroke-width="2">
+    <path d="M90 540H640"/>
+    <path d="M90 440H640"/>
+    <path d="M90 340H640"/>
+    <path d="M90 240H640"/>
+  </g>
+  <rect x="90" y="590" width="140" height="6" fill="#181818" opacity="0.35"/>
+  <rect x="760" y="180" width="340" height="300" fill="#181818"/>
+  <text x="790" y="250" font-family="monospace" font-size="24" font-weight="700" fill="#B7FF3C">NUMBERS</text>
+  <text x="790" y="300" font-family="monospace" font-size="24" font-weight="700" fill="#F4F1EA">WITH A</text>
+  <text x="790" y="350" font-family="monospace" font-size="24" font-weight="700" fill="#F4F1EA">POINT OF VIEW</text>
+  <rect x="790" y="420" width="180" height="24" fill="#F4F1EA"/>
+  <text x="804" y="437" font-family="monospace" font-size="13" font-weight="700" fill="#181818">EDIT FIRST</text>
+  <text x="90" y="680" font-family="monospace" font-size="20" font-weight="700" fill="#181818">AI IMAGE · DEMO</text>
+</svg>

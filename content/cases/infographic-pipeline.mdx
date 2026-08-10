@@ -1,0 +1,273 @@
+---
+title: "从一张表格，到流程化制作信息图"
+slug: "infographic-pipeline"
+category: "AI作图"
+summary: "如何把“做图”变成一个 AI 辅助的流水线。"
+result: "数据 → OCR → 理解 → 设计 → 生成 → 修改 → 输出，一条可以反复使用的信息图流水线。"
+date: "2026-08-08"
+order: 3
+tags: ["AI作图", "信息图", "Vibe Coding", "采编工具"]
+cover: "/images/covers/infographic-pipeline.svg"
+featured: true
+demo: false
+tool_url: "https://tu.bbird.xyz/"
+---
+
+> CASE 03 · AI × 工作流
+>
+> 如何把“做图”变成一个 AI 辅助的流水线。
+>
+
+
+## 01 — The Problem
+
+> 一张数据表，怎么变成一张可以发在新闻客户端里的信息图？
+
+传统流程是这样的：
+
+- Excel / 截图
+- 人工整理数据
+- 找参考样式
+- PS / Illustrator / PPT
+- 调整字体
+- 调整颜色
+- 调整比例
+- 修改数据
+- 重新做
+
+> 真正耗时间的不是“画图”，而是不断重复。
+
+## 02 — Think
+
+这个案例的起点不是工具，而是一段真实的 ChatGPT 对话。
+下面只截取几个关键节点，完整对话可以在页面底部打开。
+
+<Conversation
+  title="关键对话"
+  label="ChatGPT · 真实记录"
+  initialCount={4}
+  fullLabel="查看完整ChatGPT对话"
+  fullUrl="https://chatgpt.com/share/6a76e0ce-ed10-83ea-a812-bfe5c8ba5375"
+  messages={[
+    {
+      role: "me",
+      text: "我想做一个 AI 信息图生成工具：输入一张数据表，输出可以直接发布的信息图。"
+    },
+    {
+      role: "ai",
+      text: "我会先拆产品：数据读取、字段理解、图表选择、视觉生成、导出。每一层都要保留原始值。"
+    },
+    {
+      role: "me",
+      text: "我希望参考《经济学人》、FT、Bloomberg 的视觉语言。"
+    },
+    {
+      role: "ai",
+      text: "信息图不是简单的数据可视化，而是一套编辑设计语言：层级、节奏、留白、字体和色彩都有规则。"
+    },
+    {
+      role: "me",
+      text: "OCR 识别错了怎么办？我不能把错误数据发出去。"
+    },
+    {
+      role: "ai",
+      text: "把原始值、识别值、最终展示值分开保存，任何一步都能追溯。"
+    }
+  ]}
+/>
+
+<PromptCard
+  title="我是怎么告诉AI的？"
+  context="这个 prompt 把“做一张图”变成了“建立一条信息图流水线”。"
+  prompt={`我想做一个 AI 信息图生成工具：
+
+- 输入：一张数据表或截图
+- 处理：OCR、数据结构理解、图表类型选择
+- 设计：参考《经济学人》、FT、Bloomberg 的视觉语言
+- 输出：HTML / SVG，可发布到新闻客户端
+- 底线：保留原始数据，任何一步都能追溯
+
+先设计流程，再谈功能。`}
+/>
+
+<Moments
+  title="AI Moments"
+  label="转折点"
+  items={[
+    {
+      title: "数据 → 产品流程",
+      note: "从“帮我画图”变成拆解可执行的流水线。"
+    },
+    {
+      title: "画图 → 编辑设计语言",
+      note: "信息图不是可视化，是一套编辑设计规则。"
+    },
+    {
+      title: "自动生成 → 可追溯流水线",
+      note: "OCR 错误暴露后，每一步都必须保留原始值。"
+    }
+  ]}
+/>
+
+## 03 — Build
+
+一张图是怎么被“流水线”生产出来的？点击任意节点查看这一层做了什么。
+
+<Pipeline
+  title="Build Pipeline"
+  label="AI + Workflow"
+  steps={[
+    {
+      title: "输入数据",
+      description: "把 Excel、截图或 PDF 拖进工具，作为整条流水线的原始输入。"
+    },
+    {
+      title: "OCR / 数据识别",
+      description: "识别表格区域和单元格内容，并保留识别前的原始值。"
+    },
+    {
+      title: "理解数据结构",
+      description: "判断行列含义，标记指标、单位和时间维度。"
+    },
+    {
+      title: "选择图表类型",
+      description: "根据数据关系推荐柱状图、折线图或结构图。"
+    },
+    {
+      title: "生成视觉方案",
+      description: "参考编辑部视觉语言，生成多个版式草稿供人选择。"
+    },
+    {
+      title: "生成 HTML / SVG",
+      description: "产出可校对、可发布的代码与矢量图。"
+    },
+    {
+      title: "人工校正",
+      description: "检查 OCR、数字、层级、标题和来源。"
+    },
+    {
+      title: "导出",
+      description: "输出适合新闻客户端的最终信息图。"
+    }
+  ]}
+/>
+
+## 04 — AI 真正帮了什么？
+
+不要说“AI 帮我画图”。真正有价值的是分工。
+
+<RoleSplit
+  ai={[
+    "理解：这张表到底讲了什么？",
+    "选择：什么图表最适合表达？",
+    "设计：怎样组织视觉层级？",
+    "生成：HTML / SVG / CSS",
+    "修改：“这个标题太大。”“这一列不要显示。”“改成FT风格。”"
+  ]}
+  human={[
+    "判断：什么信息值得呈现？",
+    "编辑：哪个数字应该突出？",
+    "审美：这个图有没有“新闻感”？",
+    "事实核查：OCR 有没有识别错？"
+  ]}
+/>
+
+## 05 — Fail：AI 做了一张“非常漂亮”的错误图
+
+这个案例不能只展示成功作品。最有用的一课来自一次 OCR 错误。
+
+> AI 最危险的时候，不是它不会做，而是它做得像真的一样。
+
+<Timeline label="踩坑记录">
+  <TimelineItem
+    step="01"
+    title="原始图片"
+    time="Day 1"
+    summary="一张来自财报的数据表格截图。"
+  >
+    <ImageBlock
+      src="/images/artifacts/before-table.svg"
+      alt="原始表格占位图"
+      caption="占位图：原始表格截图"
+    />
+  </TimelineItem>
+
+  <TimelineItem
+    step="02"
+    title="OCR 识别"
+    time="Day 1"
+    summary="AI 开始读取表格，但识别并不等于理解。"
+  >
+    <Field label="发生了什么">
+      OCR 把两列数据读反了，单位也漏掉了。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="03"
+    title="错误数据"
+    time="Day 1"
+    summary="错误已经进入流水线，但看起来非常正常。"
+  >
+    <Field label="我的判断">
+      如果没有原始值对照，这层错误几乎不可见。
+    </Field>
+  </TimelineItem>
+
+  <TimelineItem
+    step="04"
+    title="AI 生成漂亮错误图"
+    time="Day 2"
+    summary="视觉越完整，错误越危险。"
+  >
+    <ImageBlock
+      src="/images/artifacts/ocr-error.svg"
+      alt="错误信息图占位图"
+      caption="占位图：视觉完整但数据错误的图"
+    />
+  </TimelineItem>
+
+  <TimelineItem
+    step="05"
+    title="发现问题 → 修正 → 重新生成"
+    time="Day 2"
+    summary="回到原始数据，修正 OCR，重新跑通流水线。"
+  >
+    <Field label="修正后">
+      原始值、识别值、展示值分开展示，任何一步都能追溯。
+    </Field>
+  </TimelineItem>
+</Timeline>
+
+## 06 — Before / After
+
+拖动滑块，看原始表格如何变成最终信息图。
+
+<BeforeAfterSlider
+  before="/images/artifacts/spacex pdf.jpg"
+  after="/images/artifacts/spacex.jpg"
+  beforeLabel="Before · 原始表格"
+  afterLabel="After · 信息图"
+  caption="占位图：未来替换为真实前后对比"
+/>
+
+## 07 — What I Learned
+
+<Lessons
+  items={[
+    "AI 最适合做“重复但需要判断”的工作。",
+    "设计不是让 AI 替你审美，而是让 AI 快速生成大量可选择的方案。",
+    "真正的效率来自流程，而不是 Prompt。",
+    "一个好的工具，应该把人的注意力留给最重要的判断。"
+  ]}
+/>
+
+## 核心原则
+
+> Automate the repetition.<br/>Keep the judgment.
+>
+> 把重复交给 AI，把判断留给人。
+
+## 看完了？现在拿一张表试试。
+
+<TryItYourself url="https://tu.bbird.xyz/" />

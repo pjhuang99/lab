@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Chart check placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="16" fill="#181818"/>
+  <g stroke="#181818" stroke-opacity="0.18" stroke-width="2">
+    <path d="M100 540H760"/>
+    <path d="M100 440H760"/>
+    <path d="M100 340H760"/>
+    <path d="M100 240H760"/>
+  </g>
+  <rect x="140" y="300" width="90" height="240" fill="#181818"/>
+  <rect x="270" y="220" width="90" height="320" fill="#181818"/>
+  <rect x="400" y="250" width="90" height="290" fill="#B7FF3C"/>
+  <rect x="530" y="340" width="90" height="200" fill="#181818"/>
+  <text x="140" y="285" font-family="monospace" font-size="18" font-weight="700" fill="#181818">90</text>
+  <text x="270" y="205" font-family="monospace" font-size="18" font-weight="700" fill="#181818">128</text>
+  <text x="410" y="235" font-family="monospace" font-size="18" font-weight="700" fill="#181818">6.2</text>
+  <text x="530" y="325" font-family="monospace" font-size="18" font-weight="700" fill="#181818">75</text>
+  <rect x="840" y="200" width="280" height="210" fill="#181818"/>
+  <text x="870" y="260" font-family="monospace" font-size="22" font-weight="700" fill="#F4F1EA">WRONG</text>
+  <text x="870" y="300" font-family="monospace" font-size="22" font-weight="700" fill="#F4F1EA">LABEL</text>
+  <rect x="870" y="340" width="180" height="24" fill="#B7FF3C"/>
+  <text x="884" y="357" font-family="monospace" font-size="13" font-weight="700" fill="#181818">DO NOT PUBLISH</text>
+  <text x="100" y="610" font-family="monospace" font-size="20" font-weight="700" fill="#181818">VERIFY BEFORE SHIPPING · DEMO</text>
+</svg>

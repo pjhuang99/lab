@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Fact check list placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="360" height="36" fill="#181818"/>
+  <text x="100" y="94" font-family="monospace" font-size="16" font-weight="700" fill="#F4F1EA">FACT CHECK LIST</text>
+  <g font-family="monospace" font-size="14" fill="#181818">
+    <rect x="80" y="150" width="520" height="60" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="110" y="186">01 TIME · VERIFIED</text>
+    <rect x="80" y="230" width="520" height="60" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="110" y="266">02 TITLE · VERIFIED</text>
+    <rect x="80" y="310" width="520" height="60" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="110" y="346">03 NUMBER · CHECK</text>
+    <rect x="80" y="390" width="520" height="60" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="110" y="426">04 QUOTE · SOURCE</text>
+    <rect x="80" y="470" width="520" height="60" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="110" y="506">05 INFERENCE · LABELED</text>
+  </g>
+  <rect x="660" y="150" width="460" height="380" fill="#181818"/>
+  <text x="690" y="220" font-family="monospace" font-size="24" font-weight="700" fill="#B7FF3C">NO FACTS</text>
+  <text x="690" y="270" font-family="monospace" font-size="24" font-weight="700" fill="#F4F1EA">NO HALLUCINATION</text>
+  <rect x="690" y="350" width="380" height="10" fill="#F4F1EA" opacity="0.5"/>
+  <rect x="690" y="378" width="340" height="10" fill="#F4F1EA" opacity="0.35"/>
+  <rect x="690" y="406" width="370" height="10" fill="#F4F1EA" opacity="0.35"/>
+  <rect x="690" y="470" width="220" height="28" fill="#B7FF3C"/>
+  <text x="704" y="489" font-family="monospace" font-size="13" font-weight="700" fill="#181818">VERIFY BEFORE PUBLISH</text>
+</svg>

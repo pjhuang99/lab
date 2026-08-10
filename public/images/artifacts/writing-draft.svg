@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Writing draft placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="200" height="12" fill="#B7FF3C"/>
+  <rect x="80" y="110" width="520" height="26" fill="#181818"/>
+  <rect x="80" y="160" width="420" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="80" y="186" width="480" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="80" y="240" width="180" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="80" y="268" width="640" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="80" y="294" width="600" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="80" y="320" width="640" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="80" y="374" width="180" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="80" y="402" width="620" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="80" y="428" width="540" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="80" y="454" width="600" height="10" fill="#181818" opacity="0.12"/>
+  <rect x="860" y="160" width="260" height="300" fill="#181818"/>
+  <text x="885" y="220" font-family="monospace" font-size="20" font-weight="700" fill="#B7FF3C">STRUCTURE</text>
+  <text x="885" y="260" font-family="monospace" font-size="20" font-weight="700" fill="#B7FF3C">DRAFT</text>
+  <text x="885" y="420" font-family="monospace" font-size="13" fill="#F4F1EA">DEMO ARTIFACT</text>
+  <rect x="80" y="530" width="180" height="5" fill="#181818" opacity="0.3"/>
+</svg>

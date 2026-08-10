@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">Commentary radar cover placeholder</title>
+  <rect width="1200" height="750" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#B7FF3C"/>
+  <rect x="90" y="90" width="320" height="10" fill="#181818" opacity="0.6"/>
+  <rect x="90" y="130" width="460" height="38" fill="#181818"/>
+  <text x="106" y="156" font-family="monospace" font-size="19" font-weight="700" fill="#F4F1EA">COMMENTARY RADAR</text>
+  <rect x="90" y="220" width="460" height="430" fill="#181818"/>
+  <rect x="90" y="250" width="420" height="8" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="90" y="280" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="90" y="310" width="420" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="90" y="360" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="90" y="390" width="420" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="90" y="440" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <text x="110" y="600" font-family="monospace" font-size="16" font-weight="700" fill="#B7FF3C">NEWS FEED</text>
+  <rect x="600" y="220" width="510" height="430" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+  <rect x="630" y="250" width="180" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="280" width="450" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="300" width="420" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="340" width="180" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="370" width="450" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="390" width="400" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="430" width="180" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="460" width="450" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="480" width="410" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="570" width="180" height="40" fill="#B7FF3C"/>
+  <text x="646" y="596" font-family="monospace" font-size="14" font-weight="700" fill="#181818">TRACE CHECK</text>
+  <text x="90" y="700" font-family="monospace" font-size="20" font-weight="700" fill="#181818">CASE 04 · REAL CASE</text>
+</svg>

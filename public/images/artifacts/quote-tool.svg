@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Quote tool placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="320" height="40" fill="#181818"/>
+  <text x="100" y="96" font-family="monospace" font-size="18" font-weight="700" fill="#F4F1EA">QUOTE TOOL</text>
+  <rect x="80" y="140" width="480" height="440" fill="none" stroke="#181818" stroke-width="2"/>
+  <rect x="110" y="180" width="200" height="10" fill="#181818" opacity="0.35"/>
+  <rect x="110" y="210" width="420" height="34" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+  <rect x="110" y="270" width="200" height="10" fill="#181818" opacity="0.35"/>
+  <rect x="110" y="300" width="420" height="34" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+  <rect x="110" y="360" width="200" height="10" fill="#181818" opacity="0.35"/>
+  <rect x="110" y="390" width="420" height="34" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+  <rect x="110" y="460" width="160" height="44" fill="#B7FF3C"/>
+  <text x="124" y="488" font-family="monospace" font-size="14" font-weight="700" fill="#181818">GENERATE</text>
+  <rect x="620" y="140" width="500" height="440" fill="#181818"/>
+  <text x="650" y="200" font-family="monospace" font-size="16" font-weight="700" fill="#B7FF3C">MAIL PREVIEW</text>
+  <rect x="650" y="240" width="440" height="10" fill="#F4F1EA" opacity="0.8"/>
+  <rect x="650" y="268" width="360" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="650" y="296" width="400" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="650" y="360" width="200" height="10" fill="#F4F1EA" opacity="0.6"/>
+  <rect x="650" y="388" width="440" height="10" fill="#F4F1EA" opacity="0.35"/>
+  <rect x="650" y="416" width="380" height="10" fill="#F4F1EA" opacity="0.35"/>
+  <rect x="650" y="510" width="160" height="40" fill="#B7FF3C"/>
+  <text x="664" y="536" font-family="monospace" font-size="13" font-weight="700" fill="#181818">COPY EMAIL</text>
+</svg>

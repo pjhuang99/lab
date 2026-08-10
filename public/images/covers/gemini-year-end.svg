@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">Gemini year-end profile cover placeholder</title>
+  <rect width="1200" height="750" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#B7FF3C"/>
+  <rect x="90" y="90" width="300" height="10" fill="#181818" opacity="0.6"/>
+  <rect x="90" y="130" width="560" height="38" fill="#181818"/>
+  <text x="106" y="156" font-family="monospace" font-size="19" font-weight="700" fill="#F4F1EA">YEAR-END PROFILE · GEMINI</text>
+  <g font-family="monospace" font-size="13" font-weight="700">
+    <rect x="90" y="230" width="220" height="120" fill="#181818"/>
+    <text x="106" y="310" fill="#B7FF3C">DRAFT</text>
+    <rect x="360" y="230" width="220" height="120" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+    <text x="376" y="310" fill="#181818">HALLUCINATION</text>
+    <rect x="630" y="230" width="220" height="120" fill="#B7FF3C"/>
+    <text x="646" y="310" fill="#181818">FACT CHECK</text>
+    <rect x="900" y="230" width="220" height="120" fill="#181818"/>
+    <text x="916" y="310" fill="#F4F1EA">PUBLISHED</text>
+  </g>
+  <g stroke="#181818" stroke-opacity="0.3" stroke-width="3">
+    <path d="M310 290H360"/>
+    <path d="M580 290H630"/>
+    <path d="M850 290H900"/>
+  </g>
+  <rect x="90" y="420" width="500" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="90" y="448" width="440" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="90" y="476" width="480" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="90" y="560" width="180" height="6" fill="#181818" opacity="0.35"/>
+  <text x="980" y="700" font-family="monospace" font-size="20" font-weight="700" fill="#181818">CASE 01 · REAL CASE</text>
+</svg>

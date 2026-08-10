@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">Newsroom tools demo cover placeholder</title>
+  <rect width="1200" height="750" fill="#181818"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#B7FF3C"/>
+  <text x="90" y="110" font-family="monospace" font-size="26" font-weight="700" fill="#F4F1EA">NEWSROOM TOOLS</text>
+  <rect x="90" y="150" width="500" height="8" fill="#F4F1EA" opacity="0.5"/>
+  <rect x="90" y="190" width="300" height="330" fill="#F4F1EA"/>
+  <rect x="440" y="190" width="300" height="330" fill="#B7FF3C"/>
+  <rect x="790" y="190" width="320" height="330" fill="#F4F1EA" opacity="0.75"/>
+  <rect x="110" y="230" width="180" height="20" fill="#181818"/>
+  <rect x="460" y="230" width="180" height="20" fill="#181818"/>
+  <rect x="810" y="230" width="180" height="20" fill="#181818" opacity="0.5"/>
+  <rect x="110" y="280" width="250" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="460" y="280" width="250" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="810" y="280" width="250" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="110" y="310" width="230" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="460" y="310" width="230" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="810" y="310" width="230" height="10" fill="#181818" opacity="0.3"/>
+  <rect x="110" y="450" width="140" height="32" fill="#181818"/>
+  <text x="122" y="472" font-family="monospace" font-size="13" font-weight="700" fill="#F4F1EA">SUMMARY</text>
+  <rect x="460" y="450" width="140" height="32" fill="#181818"/>
+  <text x="472" y="472" font-family="monospace" font-size="13" font-weight="700" fill="#F4F1EA">RISKS</text>
+  <rect x="810" y="450" width="170" height="32" fill="#181818" opacity="0.6"/>
+  <text x="822" y="472" font-family="monospace" font-size="13" font-weight="700" fill="#F4F1EA">VERIFY LIST</text>
+  <text x="90" y="680" font-family="monospace" font-size="20" font-weight="700" fill="#B7FF3C">EARNINGS · DEMO</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Commentary radar tool placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="360" height="36" fill="#181818"/>
+  <text x="100" y="94" font-family="monospace" font-size="16" font-weight="700" fill="#F4F1EA">COMMENTARY RADAR</text>
+  <rect x="80" y="140" width="460" height="450" fill="#181818"/>
+  <rect x="80" y="170" width="420" height="8" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="80" y="200" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="80" y="230" width="420" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="80" y="280" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="80" y="310" width="420" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <rect x="80" y="360" width="380" height="8" fill="#F4F1EA" opacity="0.25"/>
+  <text x="100" y="540" font-family="monospace" font-size="16" font-weight="700" fill="#B7FF3C">NEWS FEED</text>
+  <rect x="600" y="140" width="520" height="450" fill="#F4F1EA" stroke="#181818" stroke-width="2"/>
+  <rect x="630" y="180" width="200" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="210" width="460" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="230" width="420" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="280" width="200" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="310" width="460" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="330" width="430" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="380" width="200" height="8" fill="#181818" opacity="0.4"/>
+  <rect x="630" y="410" width="460" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="430" width="400" height="8" fill="#181818" opacity="0.2"/>
+  <rect x="630" y="530" width="180" height="40" fill="#B7FF3C"/>
+  <text x="646" y="556" font-family="monospace" font-size="14" font-weight="700" fill="#181818">TRACE CHECK</text>
+</svg>

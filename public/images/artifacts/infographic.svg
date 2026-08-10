@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Infographic draft placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="320" height="34" fill="#181818"/>
+  <text x="100" y="94" font-family="monospace" font-size="16" font-weight="700" fill="#F4F1EA">INFOGRAPHIC DRAFT</text>
+  <rect x="80" y="130" width="220" height="10" fill="#181818" opacity="0.5"/>
+  <g>
+    <rect x="120" y="260" width="80" height="230" fill="#181818"/>
+    <rect x="230" y="190" width="80" height="300" fill="#B7FF3C"/>
+    <rect x="340" y="300" width="80" height="190" fill="#181818"/>
+    <rect x="450" y="240" width="80" height="250" fill="#181818" opacity="0.45"/>
+  </g>
+  <g stroke="#181818" stroke-opacity="0.18" stroke-width="2">
+    <path d="M80 500H560"/>
+    <path d="M80 400H560"/>
+    <path d="M80 300H560"/>
+    <path d="M80 200H560"/>
+  </g>
+  <rect x="80" y="540" width="460" height="10" fill="#181818" opacity="0.2"/>
+  <rect x="650" y="130" width="460" height="410" fill="#181818"/>
+  <text x="680" y="190" font-family="monospace" font-size="20" font-weight="700" fill="#B7FF3C">WHY IT MATTERS</text>
+  <rect x="680" y="230" width="400" height="10" fill="#F4F1EA" opacity="0.8"/>
+  <rect x="680" y="258" width="340" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="680" y="286" width="380" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="680" y="350" width="200" height="10" fill="#F4F1EA" opacity="0.6"/>
+  <rect x="680" y="378" width="400" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="680" y="406" width="360" height="10" fill="#F4F1EA" opacity="0.4"/>
+  <rect x="680" y="490" width="180" height="26" fill="#B7FF3C"/>
+  <text x="694" y="508" font-family="monospace" font-size="13" font-weight="700" fill="#181818">SOURCE CHECK</text>
+</svg>

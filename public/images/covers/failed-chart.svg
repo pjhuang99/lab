@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">Failed chart demo cover placeholder</title>
+  <rect width="1200" height="750" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#181818"/>
+  <rect x="90" y="100" width="180" height="10" fill="#181818" opacity="0.6"/>
+  <g>
+    <rect x="120" y="300" width="100" height="260" fill="#181818"/>
+    <rect x="260" y="220" width="100" height="340" fill="#181818"/>
+    <rect x="400" y="260" width="100" height="300" fill="#B7FF3C"/>
+    <rect x="540" y="330" width="100" height="230" fill="#181818"/>
+  </g>
+  <g stroke="#181818" stroke-opacity="0.2" stroke-width="2">
+    <path d="M80 600H660"/>
+    <path d="M80 500H660"/>
+    <path d="M80 400H660"/>
+    <path d="M80 300H660"/>
+  </g>
+  <text x="120" y="285" font-family="monospace" font-size="20" font-weight="700" fill="#181818">128</text>
+  <text x="260" y="205" font-family="monospace" font-size="20" font-weight="700" fill="#181818">6.2</text>
+  <text x="410" y="245" font-family="monospace" font-size="20" font-weight="700" fill="#181818">128%</text>
+  <rect x="760" y="240" width="260" height="170" fill="#181818"/>
+  <text x="790" y="290" font-family="monospace" font-size="22" font-weight="700" fill="#F4F1EA">NUMBERS</text>
+  <text x="790" y="330" font-family="monospace" font-size="22" font-weight="700" fill="#F4F1EA">SWAPPED</text>
+  <rect x="790" y="370" width="140" height="22" fill="#B7FF3C"/>
+  <text x="800" y="386" font-family="monospace" font-size="13" font-weight="700" fill="#181818">CHECK DATA</text>
+  <text x="90" y="700" font-family="monospace" font-size="20" font-weight="700" fill="#181818">FAILED EXPERIMENT · DEMO</text>
+</svg>

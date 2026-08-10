@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Original table placeholder</title>
+  <rect width="1200" height="675" fill="#F4F1EA"/>
+  <rect x="80" y="70" width="300" height="34" fill="#181818"/>
+  <text x="100" y="94" font-family="monospace" font-size="16" font-weight="700" fill="#F4F1EA">SOURCE TABLE</text>
+  <g stroke="#181818" stroke-width="2">
+    <path d="M80 170H700"/>
+    <path d="M80 250H700"/>
+    <path d="M80 330H700"/>
+    <path d="M80 410H700"/>
+    <path d="M80 490H700"/>
+    <path d="M235 170V490"/>
+    <path d="M390 170V490"/>
+    <path d="M545 170V490"/>
+    <path d="M80 170H700"/>
+  </g>
+  <g font-family="monospace" font-size="14" fill="#181818">
+    <text x="110" y="205">Company</text>
+    <text x="270" y="205">Revenue</text>
+    <text x="420" y="205">Growth</text>
+    <text x="570" y="205">Region</text>
+    <text x="110" y="295">A</text>
+    <text x="270" y="295">128</text>
+    <text x="420" y="295">6.2%</text>
+    <text x="570" y="295">APAC</text>
+    <text x="110" y="375">B</text>
+    <text x="270" y="375">94</text>
+    <text x="420" y="375">-3.1%</text>
+    <text x="570" y="375">EMEA</text>
+    <text x="110" y="455">C</text>
+    <text x="270" y="455">205</text>
+    <text x="420" y="455">12.8%</text>
+    <text x="570" y="455">NA</text>
+  </g>
+  <text x="80" y="600" font-family="monospace" font-size="20" font-weight="700" fill="#181818">BEFORE · RAW DATA</text>
+</svg>
