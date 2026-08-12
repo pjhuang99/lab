@@ -12,6 +12,7 @@ export interface PresentationSlide {
   bullets?: string[];
   note?: string;
   link?: PresentationLink;
+  interactive?: "tag-cloud";
 }
 
 export const PRESENTATION_SLIDES: PresentationSlide[] = [
@@ -25,6 +26,12 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
   {
     id: "02",
     chapter: "01 · AI 不只是聊天机器人",
+    title: ["AI新概念爆炸"],
+    interactive: "tag-cloud"
+  },
+  {
+    id: "03",
+    chapter: "01 · AI 不只是聊天机器人",
     title: ["我不会编程"],
     body: ["但我最近做了这些东西："],
     bullets: ["财报雷达", "时评雷达", "图表直通车", "其他正在开发的小工具"],
@@ -32,16 +39,13 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     link: { href: "/tools", label: "看看我的工具" }
   },
   {
-    id: "03",
+    id: "04",
     chapter: "01 · AI 不只是聊天机器人",
     title: ["过去：一个小需求", "也可能等两周"],
     bullets: [
-      "找资料",
-      "打开网页",
-      "复制",
-      "Excel",
-      "Word",
-      "Photoshop",
+      "找参考样本",
+      "产品经理做demo",
+      "美编做效果图",
       "找技术",
       "提需求",
       "等开发",
@@ -50,24 +54,24 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     ]
   },
   {
-    id: "04",
+    id: "05",
     chapter: "01 · AI 不只是聊天机器人",
     title: ["现在：我想要一个解析财报的工具……"],
-    body: ["AI → 网站跑起来"],
+    body: ["Codex/Workbuddy → 财报雷达网站跑起来"],
     note: "我也能Vibe Coding：AI帮我开发得心应手的工具。",
     link: { href: "/cases/earnings-pdf-to-product", label: "查看财报雷达案例" }
   },
   {
-    id: "05",
+    id: "06",
     chapter: "01 · AI 不只是聊天机器人",
     title: ["AI不仅可以写文章"],
-    body: ["还可以作图、做PPT，让你设计、固化自己的工作流"]
+    body: ["还可以作图、做PPT，梳理、固化自己的工作流"]
   },
   {
-    id: "06",
+    id: "07",
     chapter: "02 · 我怎么开始给自己造工具",
-    title: ["Chatgpt的第一特性：", "对话、吐文字"],
-    body: ["写稿很容易？"],
+    title: ["Chatgpt等LLM的第一特性：", "对话、吐文字"],
+    body: ["写稿很容易"],
     bullets: [
       "帮我把这段事件整理成一篇时间线……",
       "这个结构不对，重新来。",
@@ -76,18 +80,18 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     ]
   },
   {
-    id: "07",
+    id: "08",
     chapter: "02 · 我怎么开始给自己造工具",
     title: ["从文字到图片"],
     bullets: [
-      "就某个文章出制图思路，挑选某个方案",
+      "Chat:就某个文章出制图思路，挑选某个方案",
       "让 Gemini的Nana Banana出图",
       "让 Chatgpt的Image 2出图"
     ],
     link: { href: "https://share.gemini.google/CzPKupusuvYE", label: "查看Gemini制作封面海报的案例" }
   },
   {
-    id: "08",
+    id: "09",
     chapter: "02 · 我怎么开始给自己造工具",
     title: ["从图片到播客、视频、思维导图……"],
     body: ["Google的Notebooklm是深度研究的利器"],
@@ -98,9 +102,9 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     }
   },
   {
-    id: "09",
+    id: "10",
     chapter: "02 · 我怎么开始给自己造工具",
-    title: ["如何开始用LLM开发网页"],
+    title: ["如何开始用LLM开发网站"],
     bullets: [
       "Google的AIstudio",
       "Claude Code",
@@ -110,18 +114,18 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     ]
   },
   {
-    id: "10",
+    id: "11",
     chapter: "02 · 我怎么开始给自己造工具",
-    title: ["单一页面：html可以完成大部分展示"],
+    title: ["单一页面html可以完成大部分展示"],
     body: ["“PPT、表格、简单交互都可以用网页完成…”"],
     link: { href: "https://www.bbird.xyz/", label: "查看时评雷达案例" }
   },
   {
-    id: "11",
+    id: "12",
     chapter: "02 · 我怎么开始给自己造工具",
     title: ["让 AI 写多个文件的复杂网站"],
     bullets: [
-      "帮我做一个网页。",
+      "帮我做一个本地预览的网页。",
       "如何部署到服务器。",
       "注册域名。",
       "再加入草稿箱、注册、登录功能……",
@@ -130,26 +134,26 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "一个真的能用的网站出来了。"
   },
   {
-    id: "12",
+    id: "13",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["描述需求，AI 写代码 →", "看效果，继续描述 →", "AI 继续改"],
     bullets: ["想法 → 描述 → 代码 → 运行 → 发现问题 → 描述问题 → 修改 → 再运行"],
     note: "这就是我的 Vibe Coding。"
   },
   {
-    id: "13",
+    id: "14",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["不需要先学会编程"],
     body: ["不用写一行代码，网站就做出来了"],
     note: "不是“没有写代码”，而是“不需要先学会编程再开始”。"
   },
   {
-    id: "14",
+    id: "15",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["AI 写代码，比我想象中厉害", "AI 也比我想象中笨"]
   },
   {
-    id: "15",
+    id: "16",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["AI 写代码的几种经典失误"],
     bullets: [
@@ -163,14 +167,14 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     link: { href: "/cases/gemini-year-end-profile", label: "查看事实核对案例" }
   },
   {
-    id: "16",
+    id: "17",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["小步快跑", "Vibe Coding 的正确姿势"],
     bullets: ["一个页面", "一个按钮", "一个功能", "数据接口", "组合起来"],
     note: "不要一次做“完整的智能平台”。"
   },
   {
-    id: "17",
+    id: "18",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["AI 不懂采编细节和价值判断"],
     bullets: [
@@ -183,7 +187,7 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "你的行业经验，就是你最重要的代码。"
   },
   {
-    id: "18",
+    id: "19",
     chapter: "03 · 从写稿，到作图，再到编程",
     title: ["AI与合格新闻的最大冲撞：幻觉"],
     bullets: [
@@ -194,7 +198,7 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "从“时评雷达”到“财报雷达”，都嵌入了事实核查环节和功能。"
   },
   {
-    id: "19",
+    id: "20",
     chapter: "04 · 把我的工具做成展览",
     title: ["案例 · 财报雷达"],
     body: ["把重复劳动交给 AI。"],
@@ -202,14 +206,14 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     link: { href: "/cases/earnings-pdf-to-product", label: "查看完整实验" }
   },
   {
-    id: "20",
+    id: "21",
     chapter: "04 · 把我的工具做成展览",
     title: ["案例 · 时评雷达"],
     body: ["需要关注热评新闻？", "需要提供评论角度？","变成：从素材提取、选择角度、核对事实的工作流"],
     link: { href: "/cases/commentary-radar", label: "打开时评雷达案例" }
   },
   {
-    id: "21",
+    id: "22",
     chapter: "04 · 把我的工具做成展览",
     title: ["图表直通车"],
     body: ["Before / After"],
@@ -217,7 +221,7 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     link: { href: "/cases/infographic-pipeline", label: "查看图表直通车项目" }
   },
   {
-    id: "22",
+    id: "23",
     chapter: "04 · 把我的工具做成展览",
     title: ["不是所有能做出来的东西", "都值得做"],
     body: [
@@ -227,24 +231,24 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "Vibe Coding 降低了做东西的成本，但没有降低判断什么值得做的成本。"
   },
   {
-    id: "23",
-    chapter: "04 · 把我的工具做成展览",
-    title: ["以前：学习怎么使用软件", "现在：让软件适应你的工作方式"],
-    bullets: ["Excel", "Word", "Photoshop", "CMS", "数据库"]
-  },
-  {
     id: "24",
     chapter: "04 · 把我的工具做成展览",
-    title: ["我自己做工具"],
+    title: ["以前：学习怎么使用软件", "现在：让软件适应你的工作方式"],
+    bullets: ["Excel", "Word", "Photoshop", "CMS", "workbuddy"]
+  },
+  {
+    id: "25",
+    chapter: "04 · 把我的工具做成展览",
+    title: ["现在：全员DIY做工具"],
     bullets: [
-      "过去：公司买软件",
-      "后来：公司开发系统",
-      "现在：我自己做工具"
+      "过去：公司买软件，开发CMS……",
+      "现在：公司技术部开发通用工具",
+      "现在：每个人都可以自己做个性化工具"
     ],
     note: "Personal Software / Personal Tools"
   },
   {
-    id: "25",
+    id: "26",
     chapter: "04 · 把我的工具做成展览",
     title: ["未来的优秀采编", "可能都是“半个产品经理”"],
     bullets: [
@@ -258,7 +262,7 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "把自己的工作方法，固化成工具。"
   },
   {
-    id: "26",
+    id: "27",
     chapter: "05 · 年轻人现在应该怎么开始",
     title: ["从让你烦恼很久的问题开始"],
     bullets: [
@@ -268,14 +272,14 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     ]
   },
   {
-    id: "27",
+    id: "28",
     chapter: "05 · 年轻人现在应该怎么开始",
     title: ["找一个每周重复的工作流"],
     bullets: ["描述它", "找 AI", "做第一版", "自己用", "找问题", "继续改"],
     note: "不要学会了再做。做着做着就学会了。"
   },
   {
-    id: "28",
+    id: "29",
     chapter: "05 · 年轻人现在应该怎么开始",
     title: ["本次分享的工具链"],
     bullets: [
@@ -289,7 +293,7 @@ export const PRESENTATION_SLIDES: PresentationSlide[] = [
     note: "这场分享本身，就是一个 Vibe Coding Demo。"
   },
   {
-    id: "29",
+    id: "30",
     chapter: "05 · 年轻人现在应该怎么开始",
     title: ["与其杞人忧天 ", "不如加入游戏"],
     body: ["Vibe Coding ——— 把想法变成工具的能力。"],

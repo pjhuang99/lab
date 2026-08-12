@@ -7,6 +7,7 @@ import {
   PRESENTATION_TOTAL,
   getSlideById
 } from "@/lib/presentation";
+import { AiTagCloud } from "@/components/ai-tag-cloud";
 import { SlideKeyboardNav } from "@/components/slide-keyboard-nav";
 
 interface SlidePageProps {
@@ -74,6 +75,8 @@ export default function SlidePage({ params }: SlidePageProps) {
               </span>
             ))}
           </h1>
+
+          {slide.interactive === "tag-cloud" && <AiTagCloud />}
 
           {slide.body && (
             <div className="mt-8 max-w-3xl space-y-3">

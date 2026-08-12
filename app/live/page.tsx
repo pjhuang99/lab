@@ -99,7 +99,7 @@ function Agenda({ case01, case02, case03 }: AgendaProps) {
     {
       number: "01",
       title: "AI 已经不只是聊天机器人",
-      range: "Slides 01-05",
+      range: "Slides 01-06",
       keyLine:
         "AI 最重要的变化，不是替你写文章，而是让你可以制造自己的工具。",
       href: "/live/01",
@@ -110,9 +110,9 @@ function Agenda({ case01, case02, case03 }: AgendaProps) {
     {
       number: "02",
       title: "我怎么开始给自己“造工具”",
-      range: "Slides 06-11",
+      range: "Slides 07-12",
       keyLine: "从一个问题开始，而不是从 AI 开始。",
-      href: "/live/06",
+      href: "/live/07",
       label: "进入演示",
       caseHref: case02 ? `/cases/${case02.slug}` : "/cases",
       caseLabel: case02 ? "Case 02 完整实验" : "查看案例"
@@ -120,9 +120,9 @@ function Agenda({ case01, case02, case03 }: AgendaProps) {
     {
       number: "03",
       title: "从写稿，到作图，再到编程",
-      range: "Slides 12-18",
+      range: "Slides 13-19",
       keyLine: "我描述需求，AI 写代码；我看效果，继续描述。",
-      href: "/live/12",
+      href: "/live/13",
       label: "进入演示",
       caseHref: case03 ? `/cases/${case03.slug}` : "/cases",
       caseLabel: case03 ? "Case 03 完整实验" : "查看案例"
@@ -130,9 +130,9 @@ function Agenda({ case01, case02, case03 }: AgendaProps) {
     {
       number: "04",
       title: "把我的工具做成展览",
-      range: "Slides 19-25",
+      range: "Slides 20-26",
       keyLine: "把重复劳动交给 AI，把判断留给自己。",
-      href: "/live/19",
+      href: "/live/20",
       label: "进入演示",
       caseHref: "/tools",
       caseLabel: "打开工具架"
@@ -140,9 +140,9 @@ function Agenda({ case01, case02, case03 }: AgendaProps) {
     {
       number: "05",
       title: "年轻人现在应该怎么开始",
-      range: "Slides 26-29",
+      range: "Slides 27-30",
       keyLine: "找一个重复了 100 次的问题。",
-      href: "/live/26",
+      href: "/live/27",
       label: "进入演示",
       caseHref: "/#about",
       caseLabel: "查看我的方法"
